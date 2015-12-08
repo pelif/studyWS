@@ -1,6 +1,6 @@
 <?php
 
-$destino = __DIR__ . DIRECTORY_SEPARATOR . 'livros_comDTD.xml';
+$destino = __DIR__ . DIRECTORY_SEPARATOR . 'produtos.xml';
 
 if (!file_exists($destino))
 {
@@ -57,4 +57,4 @@ if (!file_exists($destino))
   file_put_contents($destino, $xml);
 }
 
-header('Location: livros_comDTD.xml');
+header('Location: produtos.xml');

@@ -29,7 +29,7 @@ if (!file_exists($destino))
           'editora'  =>'Rocco'
       ),
       array(
-          'titulo'  =>'O Ladrao de Raios',
+          'titulo'  =>'OPPPSSSS',
           'autor'    =>'Rick Riordan',
           'editora'  =>'Intrinseca'
       )

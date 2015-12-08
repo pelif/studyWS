@@ -8,11 +8,11 @@ $a = (int) $_POST['a'];
 
 $i = (float) str_replace(',', '.', $i);
 
-require 'WebServiceClient.php';
+require 'startzend.php';
 
-$client = new WebServiceClient('http://localhost/xmlgenerator/remote.php');
+$client = new Zend_XmlRpc_Client('http://localhost/xmlgenerator/remote3.php');
 
-$proxy = $client->getProxy();
+$proxy = $client->getProxy('calculadora');
 
 $m = $proxy->calculaMontante($p, $i, $n, $a);
 
@@ -24,9 +24,10 @@ $p = str_replace('.', ',', $p);
 $i = str_replace('.', ',', ($i * 100));
 $m = str_replace('.', ',', $m);
 
-$mensagem = "Um capital de R$ $p, aplicado a uma taxa de juros de $i%, durante $n $t render&aacute; R$ $l";
+$mensagem = "Um capital de R$ $p, aplicado a uma taxa de juros de $i%, durante $n $t renderá R$ $l";
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -35,6 +36,6 @@ $mensagem = "Um capital de R$ $p, aplicado a uma taxa de juros de $i%, durante $
 </head>
 <body>
 <?=$mensagem?><br>
-<a href="form-xml.php">Retornar</a>
+<a href="xml22.php">Retornar</a>
 </body>
 </html>

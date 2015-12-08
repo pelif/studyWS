@@ -6,7 +6,7 @@
 </head>
 <body>
   <h6>Cálculo de Juros Compostos</h6>
-  <form action="local.php" method="post">
+  <form action="local-NuSoap.php" method="post">
     <table>
       <tr>
         <td>Capital inicial:</td>

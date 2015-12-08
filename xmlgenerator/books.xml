@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE livros>
+<livros>
+<livro isbn="8578271122">
+<titulo>O Hobbit</titulo>
+<autor>J. R. R. Tolkien</autor>
+<editora>Devir</editora>
+</livro>
+<livro isbn="857827069x">
+<titulo>As Cronicas de Narnia</titulo>
+<autor>C. S. Lewis</autor>
+<editora>Martins Fontes</editora>
+</livro>
+<livro isbn="8532511015">
+<titulo>Harry Potter e a Pedra Filosofal</titulo>
+<autor>J. K. Rowling</autor>
+<editora>Rocco</editora>
+</livro>
+<livro isbn="8598078395">
+<titulo>O Ladrao de Raios</titulo>
+<autor>Rick Riordan</autor>
+<editora>Intrinseca</editora>
+</livro>
+</livros>

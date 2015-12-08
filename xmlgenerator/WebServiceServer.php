@@ -22,7 +22,7 @@ class WebServiceServer
   public function handle()
   {
     $response = false;
-
+   
     try {
       $xpath = new DOMXPath($this->dom);
 
@@ -56,7 +56,10 @@ class WebServiceServer
 
     if ($response === false) $response = 'Invalid request';
 
-    $xml = "<return>$response</return>";
+    $xml = "<return>";
+    $xml.= "<value>" . $response . "</value>";
+    $xml.= "<type>" . gettype($response) . "</type>";
+    $xml.= "</return>"; 
 
     header('Content-type: text/xml; charset=UTF-8');
 

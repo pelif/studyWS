@@ -35,11 +35,11 @@ $dados = array(
 
 define('EOL', "\n");
 
-$xml.=  '<livros>' . EOL;
+$xml.=  '<livros>' . PHP_EOL;
 foreach($isbns as $index => $isbn)
 {
-    $xml.=  '<livro isbn="' . $isbn . '">' . EOL;
-    $xml.=  '<titulo>' . $dados[$index]['titulo'] . '</titulo>' . EOL;
+    $xml.=  '<livro isbn="' . $isbn . '">' . PHP_EOL;
+    $xml.=  '<titulo>' . $dados[$index]['titulo'] . '</titulo>' . PHP_EOL;
     $xml.=  '<autor>' . $dados[$index]['autor'] . '</autor>' . EOL;
     $xml.=  '<editora>' . $dados[$index]['editora'] . '</editora>' . EOL;
     $xml.=  '</livro>' . EOL;

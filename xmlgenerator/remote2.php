@@ -4,6 +4,6 @@ require 'WebServiceServer.php';
 
 $server = new WebServiceServer();
 
-$server->setClass('Hp12c');
+$server->setClass('Moeda');
 
 echo $server->handle();
